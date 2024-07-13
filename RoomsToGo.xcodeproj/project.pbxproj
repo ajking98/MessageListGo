@@ -14,6 +14,9 @@
 		FFFF65962C41773A005DEF55 /* RoomsToGoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF65952C41773A005DEF55 /* RoomsToGoTests.swift */; };
 		FFFF65A02C41773A005DEF55 /* RoomsToGoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF659F2C41773A005DEF55 /* RoomsToGoUITests.swift */; };
 		FFFF65A22C41773A005DEF55 /* RoomsToGoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF65A12C41773A005DEF55 /* RoomsToGoUITestsLaunchTests.swift */; };
+		FFFF65AF2C417763005DEF55 /* MessageListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF65AE2C417763005DEF55 /* MessageListView.swift */; };
+		FFFF65B42C41FBEB005DEF55 /* MessageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF65B32C41FBEB005DEF55 /* MessageViewModel.swift */; };
+		FFFF65B62C41FC28005DEF55 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFF65B52C41FC28005DEF55 /* MessageService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		FFFF659B2C41773A005DEF55 /* RoomsToGoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RoomsToGoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFFF659F2C41773A005DEF55 /* RoomsToGoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsToGoUITests.swift; sourceTree = "<group>"; };
 		FFFF65A12C41773A005DEF55 /* RoomsToGoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsToGoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FFFF65AE2C417763005DEF55 /* MessageListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageListView.swift; sourceTree = "<group>"; };
+		FFFF65B32C41FBEB005DEF55 /* MessageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewModel.swift; sourceTree = "<group>"; };
+		FFFF65B52C41FC28005DEF55 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,11 @@
 		FFFF65832C417738005DEF55 /* RoomsToGo */ = {
 			isa = PBXGroup;
 			children = (
+				FFFF65B72C41FC2C005DEF55 /* Service */,
+				FFFF65B22C41FBDE005DEF55 /* Model */,
 				FFFF65842C417738005DEF55 /* RoomsToGoApp.swift */,
 				FFFF65862C417738005DEF55 /* ContentView.swift */,
+				FFFF65AE2C417763005DEF55 /* MessageListView.swift */,
 				FFFF65882C41773A005DEF55 /* Assets.xcassets */,
 				FFFF658A2C41773A005DEF55 /* Preview Content */,
 			);
@@ -125,6 +134,22 @@
 				FFFF65A12C41773A005DEF55 /* RoomsToGoUITestsLaunchTests.swift */,
 			);
 			path = RoomsToGoUITests;
+			sourceTree = "<group>";
+		};
+		FFFF65B22C41FBDE005DEF55 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FFFF65B32C41FBEB005DEF55 /* MessageViewModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FFFF65B72C41FC2C005DEF55 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				FFFF65B52C41FC28005DEF55 /* MessageService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFFF65B62C41FC28005DEF55 /* MessageService.swift in Sources */,
 				FFFF65872C417738005DEF55 /* ContentView.swift in Sources */,
+				FFFF65AF2C417763005DEF55 /* MessageListView.swift in Sources */,
+				FFFF65B42C41FBEB005DEF55 /* MessageViewModel.swift in Sources */,
 				FFFF65852C417738005DEF55 /* RoomsToGoApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
